@@ -217,8 +217,9 @@ footer h1{ font-size: clamp(1em, 10vw, 2em);}
 @media screen and (max-width:700px) {
     #footercontainer{
      grid-template: repeat(6,1fr) / repeat(1,1fr);
+     min-height:1000px;
      height: 150vh;
-     max-height: 100vh;
+     max-height: 150vh;
     }
 
     .case{padding: 20px 10px;}
