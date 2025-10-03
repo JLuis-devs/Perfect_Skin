@@ -154,22 +154,7 @@ header nav a:hover{
 */
 
 
-    .rodape{
-    min-height: 275px;
-    margin: auto;
-    text-align: center;
-    line-height: 2em;
-    position: relative;
-    
-}
 
-.rodapeupper{
-    background-image: linear-gradient(to bottom,#E5BDAD,#c87d60d7);
-    color: #000000;
-    h1{font-size: 20px;padding-top: 2em;}
-    a{text-decoration: none; color: black;}
-    
-}
 
 a:hover{text-decoration: underline;}
 
@@ -177,21 +162,11 @@ a:hover{text-decoration: underline;}
 
    
 
-.rodapelower{
-    background-color: var(--cabeca-rodape);
-    color: var(--fonte-clara);
-    text-align: center;    
-    height: 100%;
-}
 
 
-span{font-size: 16px;}
+span{font-size: clamp(0.85em,1vw,1.5em);}
 
 
-
-
-
-.parag{width: 32vw;font-size: 0.95vw;}
 
 
 
@@ -204,7 +179,7 @@ span{font-size: 16px;}
 
 footer a { margin: 5px;}
 
-
+footer h1{ font-size: clamp(1em, 10vw, 2em);}
 
 
 #footercontainer{
@@ -225,9 +200,36 @@ footer a { margin: 5px;}
 
 }
 .setor1 a {display: block; text-decoration: none;color:black}
+.setor2 *{color:white; text-align: center;}
 
 
+#footermob{
+    display:block;
+    min-width: 32px;
+    width: 30vw;
+    max-width: 350px;
 
+}
+.social{ margin-inline: 40px;}
+
+
+@media screen and (max-width:600px) {
+    #footercontainer{
+     grid-template: repeat(6,1fr) / repeat(1,1fr);
+     height: 100vh;
+    }
+
+    .setor1{background-image: linear-gradient(to right, #E5BDAD, #c87d60d7);
+    }
+
+    .cel4{
+        grid-area: -3/1/-2/-1;
+    }
+
+    .cel5{
+        grid-area: -2/1/-1/-1;
+    }
+}
 
 
     
