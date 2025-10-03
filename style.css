@@ -22,24 +22,31 @@ html,body{
     --borda-degrade:#B76A66;
     --fonte-clara: #ffffff;
     --font-texto: #000000;
-    --cabeca-rodape: #28211e;}
+    --cabeca-rodape: #28211e;
+    
+
+}
 
 .headercontainer{
     background-color: var(--cabeca-rodape);
     display: flex;
-    flex-flow: column wrap;
-    padding: 20px 0px;
+    flex-flow: row wrap;
+    padding: 10px 10px;
     text-align: center;
     align-items: center;
+    justify-content: space-between;
 
 }
 
 
-
-#headerdesktop{display: none;}
+#headermobile{display:none;}
+#headermobile2{display: none;}
+#headerdesktop{display: block;}
 #headermenuul{display: none;}
+#buttonlogins{display: none;}
 
-#headermenu{ box-sizing: content-box;
+
+#headermenu{ 
     color: #ffffff;
     font-size: 32px;
     border: 2px solid white;
@@ -47,12 +54,16 @@ html,body{
     width: 50px;
     aspect-ratio: 1/1;
     background-color: #000000c2;
-    margin-top: 20px;
+    margin-top: 10px;
     align-items: center;
     justify-items: center;
     align-content: center;
     cursor: pointer;
+}
 
+#buttonlogins{ margin: 20px;
+    
+    
 }
 
 
@@ -78,7 +89,7 @@ nav a:hover{
 }
 
 
-.button {margin: 20px; margin-left: 50px;
+.button {margin: 0px;
    
 
 }
@@ -87,8 +98,8 @@ nav a:hover{
     text-decoration: none;
     background-image: var(--degrade);
     color: var(--fonte-clara);
-    height: 52px;
-    padding: 10px;
+    height: 2px;
+    padding: 5px;
     margin: 5px;
     font-size: 20px;
     border-radius: 16px;
