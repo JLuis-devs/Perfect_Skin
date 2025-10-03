@@ -47,12 +47,9 @@ html,body{
 
 
 #headermenu{ 
-    color: #ffffff;
-    font-size: 32px;
-    border: 2px solid white;
+    border: 1px solid white;
     border-radius: 50%;
-    width: 50px;
-    aspect-ratio: 1/1;
+    padding: 2px;
     background-color: #000000c2;
     margin-top: 10px;
     align-items: center;
