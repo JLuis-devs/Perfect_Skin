@@ -147,7 +147,7 @@ header nav a:hover{
         margin-inline: clamp(0.85em,1vw,1.5em);
     }
 }
-      
+main{height: 100vh;}      
 
 /*
     FOOTER START
@@ -186,7 +186,8 @@ footer h1{ font-size: clamp(1em, 10vw, 2em);}
     display: grid;
     grid-template: repeat(2,1fr) / repeat(3,1fr);
     background-color: #28211e;    
-    height: 50vh;
+    height: 100vh;
+    max-height: 500px;
     place-content: center center;
     place-items: center center;
 
@@ -213,11 +214,16 @@ footer h1{ font-size: clamp(1em, 10vw, 2em);}
 .social{ margin-inline: 40px;}
 
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:700px) {
     #footercontainer{
      grid-template: repeat(6,1fr) / repeat(1,1fr);
-     height: 100vh;
+     height: 150vh;
+     max-height: 100vh;
     }
+
+    .case{padding: 20px 10px;}
+
+    #footermob{ width: 300px;}
 
     .setor1{background-image: linear-gradient(to right, #E5BDAD, #c87d60d7);
     }
