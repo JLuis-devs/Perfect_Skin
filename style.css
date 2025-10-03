@@ -14,7 +14,7 @@
 html,body{
     height: 100vh;
     width: 100vw;
-    overflow-x: ahidden;
+    overflow-x: hidden;
 }
 
 :root{
@@ -55,7 +55,7 @@ html,body{
 
 }
 
-ul,li{display: inline;}
+
 
 li{list-style: none; display: flex;}
 header nav a{ 
@@ -73,5 +73,32 @@ nav a:hover{
     background-color: #ffffff10;
     border-radius: 5px;
     padding: 5px;
-    margin: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
+
+
+.button {margin: 20px; margin-left: 50px;
+   
+
+}
+
+.headerfullbutton{
+    text-decoration: none;
+    background-image: var(--degrade);
+    color: var(--fonte-clara);
+    height: 52px;
+    padding: 10px;
+    margin: 5px;
+    font-size: 20px;
+    border-radius: 16px;
+    border: solid 1px #B76A66;
+    text-shadow: 2px 2px  #00000050;
+}
+
+#headerbuttonentrar{ 
+    background-image: none;
+    border-radius: 5px;
+
+}
+
