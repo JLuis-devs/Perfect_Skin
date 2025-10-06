@@ -10,6 +10,7 @@
 
 html,body,main{
     height: 100vh;
+    min-height: 600px;
     width: 100vw;
     overflow-x: hidden;
 }
@@ -28,7 +29,8 @@ html,body,main{
 
 #conteiner{
     display: grid;
-    grid-template: 40% 60px 60px 1fr 60px 1fr  / 14fr 500px 1fr; 
+    grid-template: 40% 60px 60px 1fr 60px 1fr  / 14fr 500px 1fr;
+    
 }
 
 
@@ -38,6 +40,7 @@ html,body,main{
     background-size: cover;
     background-repeat: no-repeat;
     grid-area: 1/1/-1/2;
+    
 }
 
 #caseform{
@@ -45,6 +48,8 @@ html,body,main{
     grid-template: 40% 60px 60px 60px 10fr 60px  100px 1fr / 1fr;
     grid-area: 1 / 2 / -1 / 3;
     align-items: center;
+    gap:10px; 
+    box-shadow: 0px 0px 0px 40px rgba(0, 0, 0, 1.123), 10px 0px -40px 0px rgb(0, 0, 0);
     
     
 }
@@ -55,6 +60,7 @@ html,body,main{
 #caseform4{ grid-row: 4/span 1;align-self: start;}
 #caseform5{ grid-row: 6/span 1;}
 #caseform6{ grid-row: 7/span 1;align-self: start;}
+#caseimg2{ grid-row: 1/-1}
 
 
 .formulario {
@@ -76,6 +82,15 @@ input[type]{
 
 .formulario a{text-decoration: none;}
 
+#logo{
+    min-height: 200px;
+    height: 30vh;
+    max-height: 300px;
+
+    
+}
+
+
 #esqueceusenha{
     color: #656565;
     font-size: 18px;
@@ -96,22 +111,31 @@ input[type]{
 .entrar:hover{
 
     display: inline-block;
-    border: 2px solid var(--borda-degrade);
+    
     border-radius: 28px;
     color: #656565;
     margin: 5px;
-    padding: 5px 20px;
-    
+    padding: 5px 20px; 
     #str {color: var(--borda-degrade)}
-    
-        
+           
    }
+.inscrevase:hover{border: 2px solid var(--borda-degrade);}
+
+
+
    #caseform6:has(.entrar:hover) ~ #bug {
         
         color:#000000
 
    }
    
+#caseimg2{
+    background-image: url('img2.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+   }
    
 
 
@@ -131,3 +155,32 @@ label{display: none;}
 
 
 
+@media screen and (max-width:600px) {
+
+    #conteiner{
+    grid-template: 40% 60px 60px 1fr 60px 1fr  / 1fr 90% 1fr; 
+    row-gap: 20px;
+    gap:10px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    }
+    #caseimg,#caseimg2{display: none;}
+
+    #caseform{
+        background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8));
+        border-radius: 50px;
+        margin: 20px 0px;     
+             
+    }
+    body{
+        background-image:  url('img1_862x1080.jpg');
+        background-size: cover;
+        background-position: left;
+        background-repeat: no-repeat;
+    }
+
+
+}
