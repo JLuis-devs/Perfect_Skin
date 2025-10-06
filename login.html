@@ -79,8 +79,8 @@
                 <label for="senha">Senha</label>
                 <input type="password" name="senha"id="senha" placeholder="Senha">
             </div>
-            <div class="formulario entrar" id="caseform4" >
-                <a href="" target="_self" rel="next" id="esqueceusenha">Esqueceu a senha?</a>
+            <div class="formulario entra" id="caseform4" >
+                <a href="esqueceu.html" target="_self" rel="next" id="esqueceusenha">Esqueceu a senha?</a>
             
             </div>
             <div class="formulario" id="caseform5">
@@ -88,7 +88,7 @@
             </div>
             <div class="formulario" id="caseform6">
                 <div class="entrar inscrevase">
-                    <a href="" target="_self" rel="next"  id="cadastrar">Não tem uma conta?<br><strong id="str">Inscreva-se</strong></a>
+                    <a href="cadastro.html" target="_self" rel="next"  id="cadastrar">Não tem uma conta?<br><strong id="str">Inscreva-se</strong></a>
                 </div>
             </div>
             <div id="fundotransparente"></div>
@@ -101,12 +101,32 @@
         </section>
     </main>
     <script>
+        
+        const entra = document.querySelector('.entra');
         const entrar = document.querySelector('.entrar');
         const botao = document.querySelector('#caseform5 input');
 
         entrar.addEventListener('mouseenter', () => {botao.style.backgroundImage = "var(--degradecinza)"});
         entrar.addEventListener('mouseleave', () => {botao.style.backgroundImage = "var(--degrade)"});
+        entra.addEventListener('mouseenter', () => {botao.style.backgroundImage = "var(--degradecinza)"});
+        entra.addEventListener('mouseleave', () => {botao.style.backgroundImage = "var(--degrade)"});
 
     </script>
+        function Menu() {
+
+
+            if (valor === 'block') {
+
+                root.style.setProperty('--visivel', 'none');
+                headerpos.style.justifyContent = 'space-between'
+            }
+               else {
+        
+                root.style.setProperty('--visivel', 'block');
+                headerpos.style.justifyContent = 'center';
+            }
+
+
+
 </body>
 </html>
