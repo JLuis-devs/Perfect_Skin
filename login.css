@@ -35,7 +35,7 @@ html,body,main{
 
 
 #caseimg{
-    background-image: url('img1.svg');
+    background-image: url('/img/img1.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -176,7 +176,7 @@ label{display: none;}
              
     }
     body{
-        background-image:  url('img1_862x1080.jpg');
+        background-image:  url('img/img1_w600.jpg');
         background-size: cover;
         background-position: left;
         background-repeat: no-repeat;
