@@ -48,6 +48,18 @@ html,body,main{
 #caseimgcadastro{
     background-image: url('/img/img_cadastro.jpg');}
 
+#caseimg2{
+    background-image: url('/img/img_Login_2.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+   }
+   
+#caseimgcadastro2{
+    background-color: #CBAF94;
+   }
+
 
 
 
@@ -69,7 +81,7 @@ html,body,main{
 #caseform4{ grid-row: 4/span 1;align-self: start;}
 #caseform5{ grid-row: 6/span 1;}
 #caseform6{ grid-row: 7/span 1;align-self: start;}
-#caseimg2{ grid-row: 1/-1}
+#caseimg2,#caseimgcadastro2{ grid-row: 1/-1}
 
 
 .formulario {
@@ -129,21 +141,8 @@ input[type]{
 .inscrevase:hover{border: 2px solid var(--borda-degrade);}
 
 
+ 
 
-#caseform6:has(.entrar:hover) ~ #bug {
-        
-    color:#000000
-
-   }
-   
-#caseimg2{
-    background-image: url('/img/img2.svg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-
-   }
-   
 
 
 
@@ -204,7 +203,7 @@ label{display: none;}
     transform: translate(-50%,-50%);
 
     }
-    #caseimg,#caseimg2{display: none;}
+    #caseimg,#caseimg2,#caseimgcadastro2,#caseimgcadastro {display: none;}
 
     #caseform{
         background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8));
