@@ -34,14 +34,23 @@ html,body,main{
 }
 
 
-#caseimg{
-    background-image: url('/img/img1.jpg');
+.caseimg{
+
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    grid-area: 1/1/-1/2;
-    
+    grid-area: 1/1/-1/2;    
 }
+
+#caseimglogin{
+    background-image: url('/img/img_Login.jpg');}
+
+#caseimgcadastro{
+    background-image: url('/img/img_cadastro.jpg');}
+
+
+
+
 
 #caseform{
     display: grid;
@@ -168,6 +177,20 @@ label{display: none;}
 }
 
 
+.formesqueceu h1{
+    font-size: clamp(1.5em,2vw,2em);
+
+}
+
+.formesqueceu p{
+    font-size: clamp(1em,2vw,1.5em);
+    padding: 20px 70px;
+    text-align: justify;
+
+
+}
+
+
 
 @media screen and (max-width:600px) {
 
@@ -190,11 +213,20 @@ label{display: none;}
              
     }
     body{
-        background-image:  url('img/img1_w600.jpg');
+    
         background-size: cover;
         background-position: left;
         background-repeat: no-repeat;
     }
+    
+    .cadastro{
+        background-image:  url('img/img_cadastro_mobile.jpg');
+    }
+
+    .lpgin{
+        background-image:  url('img/img_login_mobile.jpg');
+    }
+
 
 
 }
