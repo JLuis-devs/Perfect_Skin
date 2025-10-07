@@ -44,13 +44,13 @@ html,body,main{
 }
 
 #caseimglogin{
-    background-image: url('/img/img_Login.jpg');}
+    background-image: url('img/img_Login.jpg');}
 
 #caseimgcadastro{
-    background-image: url('/img/img_cadastro.jpg');}
+    background-image: url('./img/img_cadastro.jpg');}
 
 #caseimg2{
-    background-image: url('/img/img_Login_2.jpg');
+    background-image: url('./img/img_Login_2.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
