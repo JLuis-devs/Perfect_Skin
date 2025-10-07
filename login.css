@@ -44,7 +44,7 @@ html,body,main{
 }
 
 #caseimglogin{
-    background-image: url('img/img_Login.jpg');}
+    background-image: url('./img/img_Login.jpg');}
 
 #caseimgcadastro{
     background-image: url('./img/img_cadastro.jpg');}
@@ -229,11 +229,11 @@ label{display: none;}
     }
     
     .cadastro{
-        background-image:  url('img/img_cadastro_mobile.jpg');
+        background-image:  url('./img/img_cadastro_mobile.jpg');
     }
 
     .login{
-        background-image:  url('img/img_login_mobile.jpg');
+        background-image:  url('./img/img_login_mobile.jpg');
     }
 
 
