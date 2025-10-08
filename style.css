@@ -240,4 +240,57 @@ footer h1{ font-size: clamp(1em, 10vw, 2em);}
 
 
     
+#suapele{
+    background-image: url("./img/facescan.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: grid;
+    
+}
+
+#suapele section h1{
+    position: absolute;
+    top: 40%;
+    left:60%
+}
+
+
+
+#button{
+    background-image: var(--degrade);
+    color: var(--fonte-clara);
+    background-image: var(--degrade);
+    color: var(--fonte-clara);
+    height: 40px;
+    padding: 5px;
+    margin: 5px;
+    font-size: 20px;
+    border-radius: 16px;
+    border: solid 1px #B76A66;
+    text-shadow: 2px 2px  #00000050;
+    top: 57%;
+
+
+}
+
+
+input[type]
+{    background-image: var(--degrade);
+    color: var(--fonte-clara);
+    background-image: var(--degrade);
+    color: var(--fonte-clara);
+    height: 60px;
+    padding: 100x;
+    margin: 5px;
+    font-size: 20px;
+    border-radius: 16px;
+    border: solid 1px #B76A66;
+    text-shadow: 2px 2px  #00000050;
+    text-align: center;
+    position: absolute;
+    top:50%;
+    left: 50%;
+
+}
 
