@@ -1,11 +1,12 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Lao:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
 
 *,*::after,*::before{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: "Poppins", sans-serif;
 }
 
 html,body,main{
@@ -171,7 +172,7 @@ label{display: none;}
 #accessibility{
     position: relative;
     top: 95%;
-    left: 25%;
+    left: 0%;
     width:20px;
     height: 20px;
     /*
