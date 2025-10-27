@@ -1,12 +1,11 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Lao:wght@100..900&display=swap');
 
 *,*::after,*::before{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: "Poppins", sans-serif;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 html,body,main{
@@ -45,13 +44,13 @@ html,body,main{
 }
 
 #caseimglogin{
-    background-image: url('./img/img_Login.jpg');}
+    background-image: url('/img/img_Login.jpg');}
 
 #caseimgcadastro{
-    background-image: url('./img/img_cadastro.jpg');}
+    background-image: url('/img/img_cadastro.jpg');}
 
 #caseimg2{
-    background-image: url('./img/img_Login_2.jpg');
+    background-image: url('/img/img_Login_2.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -172,7 +171,7 @@ label{display: none;}
 #accessibility{
     position: relative;
     top: 95%;
-    left: 0%;
+    left: 25%;
     width:20px;
     height: 20px;
     /*
@@ -230,11 +229,11 @@ label{display: none;}
     }
     
     .cadastro{
-        background-image:  url('./img/img_cadastro_mobile.jpg');
+        background-image:  url('img/img_cadastro_mobile.jpg');
     }
 
     .login{
-        background-image:  url('./img/img_login_mobile.jpg');
+        background-image:  url('img/img_login_mobile.jpg');
     }
 
 
