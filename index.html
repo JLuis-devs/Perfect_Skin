@@ -78,6 +78,7 @@
             <a class="headerfullbutton headerbuttondegrade" id="headerbuttonregistrar" type="button" href="cadastro.html" target="_self" rel="next">Registrar</a>
         </div>
     </header>
+
     <main id="container">
         <section class="grid0">
             <h1>Sua pele, <strong>Seu Brilho</strong></h1>
@@ -102,7 +103,7 @@
             </div>
         </div> 
     </main>
-    
+
     <footer id="footercontainer">
             <div class="setor1 cel1 case1">
                 <nav>
@@ -196,23 +197,8 @@
             </div>
     
     </footer>
-    <script>
-        function Menu() {
-            const root = document.documentElement;
-            const valor = getComputedStyle(root).getPropertyValue('--visivel').trim();
 
-            if (valor === 'block') {
-
-                root.style.setProperty('--visivel', 'none');
-                headerpos.style.justifyContent = 'space-between'
-            }
-               else {
-        
-                root.style.setProperty('--visivel', 'block');
-                headerpos.style.justifyContent = 'center';
-            }
-}       
-    </script>    
+    <script src="app.js"></script>   
 </body>
 </html>
 

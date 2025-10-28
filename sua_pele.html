@@ -179,22 +179,6 @@
             </div>
     
     </footer>
-    <script>
-        function Menu() {
-            const root = document.documentElement;
-            const valor = getComputedStyle(root).getPropertyValue('--visivel').trim();
-
-            if (valor === 'block') {
-
-                root.style.setProperty('--visivel', 'none');
-                headerpos.style.justifyContent = 'space-between'
-            }
-               else {
-        
-                root.style.setProperty('--visivel', 'block');
-                headerpos.style.justifyContent = 'center';
-            }
-}       
-    </script>    
+    <script src="app.js"></script>    
 </body>
 </html>
