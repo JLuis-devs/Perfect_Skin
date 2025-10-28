@@ -12,14 +12,14 @@
 
 function Menu() {
     const root = document.documentElement;
-    const valor = getComputedStyle(root).getPropertyValue('--visivel').trim();
+    const valor = getComputedStyle(root).getPropertyValue('--invisivel').trim();
     if (valor === 'block') {
-        root.style.setProperty('--visivel', 'none');
+        root.style.setProperty('--invisivel', 'none');
         headerpos.style.justifyContent = 'space-between'
     }
     else {
 
-        root.style.setProperty('--visivel', 'block');
+        root.style.setProperty('--invisivel', 'block');
         headerpos.style.justifyContent = 'center';
     }
 }
